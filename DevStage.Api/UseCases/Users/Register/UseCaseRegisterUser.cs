@@ -1,5 +1,6 @@
 ﻿using DevStage.Communication.Requests;
 using DevStage.Communication.Responses;
+using DevStage.Exception;
 
 namespace DevStage.Api.UseCases.Users.Register
 {
@@ -25,7 +26,7 @@ namespace DevStage.Api.UseCases.Users.Register
             {
                 var errorMessages = result.Errors.Select(err => err.ErrorMessage).ToList();
 
-                throw new Exception();
+                throw new ErrorOnValidationException(errorMessages);
             }
         }
                 

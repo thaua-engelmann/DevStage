@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DevStage.Communication\DevStage.Communication.csproj" />
+    <ProjectReference Include="..\DevStage.Exception\DevStage.Exception.csproj" />
   </ItemGroup>
 
 </Project>
