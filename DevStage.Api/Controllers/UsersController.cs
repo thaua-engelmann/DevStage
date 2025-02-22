@@ -1,4 +1,5 @@
-﻿using DevStage.Communication.Requests;
+﻿using DevStage.Api.UseCases.Users.Register;
+using DevStage.Communication.Requests;
 using DevStage.Communication.Responses;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,7 +14,10 @@ namespace DevStage.Api.Controllers
         [ProducesResponseType(typeof(ResponseRegisteredUserJson), StatusCodes.Status201Created)]
         public IActionResult Create(RequestUserJson request)
         {
-            return Created();
+            var useCase = new UseCaseRegisterUser();
+            var response = useCase.Execute(request);
+
+            return Created(string.Empty, response);
         }
     }
 }

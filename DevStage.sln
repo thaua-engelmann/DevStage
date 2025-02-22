@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F88A9AEE-7822-439E-8E79-C98B8E7BC632}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevStage.Communication", "DevStage.Communication\DevStage.Communication.csproj", "{2CB5F18F-F2C1-42C1-84E1-BFE883729C38}"

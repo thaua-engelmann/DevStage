@@ -36,3 +36,4 @@ C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Api\obj\Debug\net8.0\Dev
 C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Api\obj\Debug\net8.0\ref\DevStage.Api.dll
 C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Api\bin\Debug\net8.0\DevStage.Communication.dll
 C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Api\bin\Debug\net8.0\DevStage.Communication.pdb
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Api\obj\Debug\net8.0\DevStage.Api.sourcelink.json
