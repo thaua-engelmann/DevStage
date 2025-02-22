@@ -1,1 +1,9 @@
-.vs
+# Visual Studio & .NET build artifacts
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
