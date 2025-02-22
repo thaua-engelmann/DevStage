@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "pklS/yI/uqfJ+nb2iU0a2BxqmhT9tPUT8zsipXHF5Xg=",
+  "Source": "DevStage.Api",
+  "BasePath": "_content/DevStage.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

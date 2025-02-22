@@ -1,0 +1,11 @@
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\bin\Debug\net8.0\DevStage.Communication.deps.json
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\bin\Debug\net8.0\DevStage.Communication.dll
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\bin\Debug\net8.0\DevStage.Communication.pdb
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\DevStage.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\DevStage.Communication.AssemblyInfoInputs.cache
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\DevStage.Communication.AssemblyInfo.cs
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\DevStage.Communication.csproj.CoreCompileInputs.cache
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\DevStage.Communication.dll
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\refint\DevStage.Communication.dll
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\DevStage.Communication.pdb
+C:\Users\engel\Back-End\C#\NlwConnectCsharpAPI\DevStage.Communication\obj\Debug\net8.0\ref\DevStage.Communication.dll
