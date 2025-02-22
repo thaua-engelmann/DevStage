@@ -4,6 +4,7 @@ using DevStage.Api.Infrastructure.Security.Cryptography;
 using DevStage.Communication.Requests;
 using DevStage.Communication.Responses;
 using DevStage.Exception;
+using FluentValidation.Results;
 
 namespace DevStage.Api.UseCases.Users.Register
 {
@@ -12,7 +13,9 @@ namespace DevStage.Api.UseCases.Users.Register
 
         public ResponseRegisteredUserJson Execute(RequestUserJson request)
         {
-            Validate(request);
+            var dbContext = new DevStageDbContext();
+
+            Validate(request, dbContext);
 
             var criptography = new BCryptAlgorithms();
 
@@ -23,8 +26,6 @@ namespace DevStage.Api.UseCases.Users.Register
                 Password = criptography.HashPassword(request.Password),
             };
 
-            var dbContext = new DevStageDbContext();
-
             dbContext.Users.Add(entity);
             dbContext.SaveChanges();
 
@@ -34,10 +35,18 @@ namespace DevStage.Api.UseCases.Users.Register
             };
         }
 
-        private void Validate(RequestUserJson request)
+        private void Validate(RequestUserJson request, DevStageDbContext dbContext)
         {
             var validator = new ValidatorRegisterUser();
             var result = validator.Validate(request);
+
+            // Check if e-mail is already registered.
+            var isEmailAlreadyRegistered = dbContext.Users.Any(user => user.Email.Equals(request.Email));
+
+            if (isEmailAlreadyRegistered)
+            {
+                result.Errors.Add(new ValidationFailure("email-registered", "E-mail is already registered."));
+            }
 
             if (!result.IsValid)
             {
