@@ -1,5 +1,6 @@
 ﻿using DevStage.Api.Domain.Entities;
-using DevStage.Api.Infrastructure;
+using DevStage.Api.Infrastructure.DataAccess;
+using DevStage.Api.Infrastructure.Security.Cryptography;
 using DevStage.Communication.Requests;
 using DevStage.Communication.Responses;
 using DevStage.Exception;
@@ -13,11 +14,13 @@ namespace DevStage.Api.UseCases.Users.Register
         {
             Validate(request);
 
+            var criptography = new BCryptAlgorithms();
+
             var entity = new User
             {
                 Name = request.Name,
                 Email = request.Email,
-                Password = request.Password,
+                Password = criptography.HashPassword(request.Password),
             };
 
             var dbContext = new DevStageDbContext();

@@ -1,7 +1,7 @@
 ﻿using DevStage.Api.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevStage.Api.Infrastructure
+namespace DevStage.Api.Infrastructure.DataAccess
 {
     public class DevStageDbContext : DbContext
     {
