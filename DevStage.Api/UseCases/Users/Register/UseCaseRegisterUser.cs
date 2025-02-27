@@ -1,6 +1,7 @@
 ﻿using DevStage.Api.Domain.Entities;
 using DevStage.Api.Infrastructure.DataAccess;
 using DevStage.Api.Infrastructure.Security.Cryptography;
+using DevStage.Api.Infrastructure.Security.Tokens.AccessToken;
 using DevStage.Communication.Requests;
 using DevStage.Communication.Responses;
 using DevStage.Exception;
@@ -29,9 +30,12 @@ namespace DevStage.Api.UseCases.Users.Register
             dbContext.Users.Add(entity);
             dbContext.SaveChanges();
 
+            var tokenGenerator = new JwtTokenGenerator();
+
             return new ResponseRegisteredUserJson
             {
-                Name = entity.Name
+                Name = entity.Name,
+                AccessToken = tokenGenerator.Generate(entity)
             };
         }
 
